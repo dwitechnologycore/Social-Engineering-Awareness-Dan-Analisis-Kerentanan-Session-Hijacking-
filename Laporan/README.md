@@ -10,8 +10,8 @@ Analisis dilakukan di lingkungan yang telah ditetapkan dan berizin. Pemeriksaan 
 - [Rekomendasi Mitigasi](#rekomendasi-mitigasi)
 
 ### Tools
-- cURL
-- FFuF
+- [cURL](https://www.kali.org/tools/curl/)
+- [FFuF](https://www.kali.org/tools/ffuf/)
 - [web server simulasi](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/login)
 - [Web Server Phising](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/it-update)
 - [Web Server Kerentanan](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/security/session-audit)
@@ -31,7 +31,7 @@ Analisis dilakukan di lingkungan yang telah ditetapkan dan berizin. Pemeriksaan 
 ### Hasil Temuan
 Pengecekan dilakukan melalui terminal Kali Linux dengan perintah curl untuk mentransfer data dari server menggunakan sintaks URL. Kemudian dengan menggunakan Fuzz Faster U Foll (FFUF) untuk memeriksa direktori atau file tersembunyi di website tersebut. Ditemukan 3 kejanggalan dari website yakni 
 
-1. Logo yang digunakan mengarah ke sumber mencurigakan: src = "https://cdn.totally-not-phishing-assets.ru/logo-tas.png". bukan  src=https://tas-corp.id/assets/images/logo-official.png
+1. Logo yang digunakan mengarah ke sumber mencurigakan: src = "https://cdn.totally-not-phishing-assets.ru/logo-tas.png". bukan  src="https://tas-corp.id/assets/images/logo-official.png"
 2. Pelaku menggunakan prinsip pretexting, yakni Scarcity & Urgency Attack. Di mana pelaku menyamar sebagai sumber domain resmi untuk meyakinkan bahwa akun target akan segera dihapus disertai penghitung waktu mundur (countdown)  untuk membuat target merasa panik, takut dan ingin segera mengganti password mereka.
 3. Pada teks bagian bawah (footer) halaman, terdapat kesalahan penulisan nama entitas korporat (typosquatting), yakni teknologi menjadi teknolgi.
 
@@ -40,5 +40,9 @@ Setelah dilakukan uji coba pengiriman data formulir dengan data sembarang ke web
 Selanjutnya dilakukan pengujian Manajemen Sesi Dan Kerentanan Session Hijacking dengan menyuntikkan cookie pada [web simulasi](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/login) untuk mencoba masuk tanpa melakukan login. Hasil uji coba menunjukkan bahwa web sedang tidak berada dalam status HttpOnly, hal ini menyebabkan penyerang dapat mengakses data pengguna dengan mudah. 
 
 ### Rekomendasi Mitigasi
-
+- Terapkan konfigurasi cookie sesi yang aman dengan mengaktifkan atribut HttpOnly, Secure, SameSite=Strict.
+- Terapkan mekanisme Session Invalidation dan Session Regeneration saat proses login untuk mencegah serangan Session Fixation.
+- Terapkan mekanisme Session Binding (mengikat token sesi dengan sidik jari IP atau perangkat pengguna).
+- Buat Prosedur standar operasional (SOP) bagi pegawai ketika menerima komunikasi mencurigakan yang mengatasnamakan bagian TI internal.
+- Buat Kebijakan pelaksanaan simulasi phishing berkala dan evaluasi kesadaran keamanan tanpa sistem hukuman (no-blame culture).
   
