@@ -5,9 +5,9 @@ Analisis dilakukan di lingkungan yang telah ditetapkan dan berizin. Pemeriksaan 
 
 ## Ringkasan
 - [Tools](#tools)
-- [Tujuan evaluasi](#TujuanEvaluasi)
-- [Hasil Temuan](#HasilTemuan)
-- [Rekomendasi Mitigasi](#RekomendasiMitigasi)
+- [Tujuan evaluasi](#tujuan-evaluasi)
+- [Hasil Temuan](#hasil-temuan)
+- [Rekomendasi Mitigasi](#rekomendasi-mitigasi)
 
 ## Tools
 - cURL
@@ -26,7 +26,7 @@ Analisis dilakukan di lingkungan yang telah ditetapkan dan berizin. Pemeriksaan 
 9.	Menyusun rekomendasi mitigasi baik dari segi aspek teknis aplikasi maupun tata kelola dan SDM.
 
 ## Hasil Temuan
-
+Pengecekan dilakukan melalui terminal Kali Linux dengan perintah curl untuk mentransfer data dari server menggunakan sintaks URL. Kemudian dengan menggunakan Fuzz Faster U Foll (FFUF) untuk memeriksa direktori atau file tersembunyi di website tersebut. 
 ## Rekomendasi Mitigasi
 
   
