@@ -12,9 +12,10 @@ Analisis dilakukan di lingkungan yang telah ditetapkan dan berizin. Pemeriksaan 
 ### Tools
 - cURL
 - FFuF
+- [web server simulasi](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/login)
 - [Web Server Phising](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/it-update)
 - [Web Server Kerentanan](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/security/session-audit)
-- [Web Server Pemantauan sesi](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/it-update)
+- [Web Server Pemantauan sesi](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/security/session-audit )
 
 ### Tujuan Evaluasi
 1.	Mengukur tingkat pemahaman anggota divisi terhadap konsep social engineering, termasuk phishing, impersonation, baiting, pretexting, dan bentuk manipulasi lainnya.
@@ -34,9 +35,9 @@ Pengecekan dilakukan melalui terminal Kali Linux dengan perintah curl untuk ment
 2. Pelaku menggunakan prinsip pretexting, yakni Scarcity & Urgency Attack. Di mana pelaku menyamar sebagai sumber domain resmi untuk meyakinkan bahwa akun target akan segera dihapus disertai penghitung waktu mundur (countdown)  untuk membuat target merasa panik, takut dan ingin segera mengganti password mereka.
 3. Pada teks bagian bawah (footer) halaman, terdapat kesalahan penulisan nama entitas korporat (typosquatting), yakni teknologi menjadi teknolgi.
 
-Setelah dilakukan uji coba pengiriman data formulir dengan data sembarang ke web simulasi, terjadi pengalihan halaman ke portal edukasi (/awareness-education). Dalam portal edukasi terdapat beberapa metrik yang terdiri dari total interaksi/kunjungan, banyak karyawan yang terjebak/kredensial terinput beserta tingkat kompromi, banyak karyawan yang melaporkan (vigilant) dan tingkat pelaporan, serta banyak karyawan yang membaca edukasi. Data-data yang ada dapat digunakan untuk mengetahui seberapa banyak karyawan yang memiliki edukasi mengenai phishing serta seberapa banyak karyawan yang memiliki tingkat kesadaran mengenai phishing. 
+Setelah dilakukan uji coba pengiriman data formulir dengan data sembarang ke web simulasi, terjadi pengalihan halaman ke [portal edukasi](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/awareness-education) . Kemudian pada [dashborad web simulasi](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/security/campaign-dashboard) terdapat beberapa metrik yang terdiri dari total interaksi/kunjungan, banyak karyawan yang terjebak/kredensial terinput beserta tingkat kompromi, banyak karyawan yang melaporkan (vigilant) dan tingkat pelaporan, serta banyak karyawan yang membaca edukasi. Data-data yang ada dapat digunakan untuk mengetahui seberapa banyak karyawan yang memiliki edukasi mengenai phishing serta seberapa banyak karyawan yang memiliki tingkat kesadaran mengenai phishing. 
 
-Selanjutnya dilakukan pengujian Manajemen Sesi Dan Kerentanan Session Hijacking dengan menyuntikkan cookie pada web simulasi untuk mencoba masuk tanpa melakukan login. Hasil uji coba menunjukkan bahwa web sedang tidak berada dalam status HttpOnly, hal ini menyebabkan penyerang dapat mengakses data pengguna dengan mudah. 
+Selanjutnya dilakukan pengujian Manajemen Sesi Dan Kerentanan Session Hijacking dengan menyuntikkan cookie pada [web simulasi](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/login) untuk mencoba masuk tanpa melakukan login. Hasil uji coba menunjukkan bahwa web sedang tidak berada dalam status HttpOnly, hal ini menyebabkan penyerang dapat mengakses data pengguna dengan mudah. 
 
 ### Rekomendasi Mitigasi
 
