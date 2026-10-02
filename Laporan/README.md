@@ -12,8 +12,7 @@ Analisis dilakukan di lingkungan yang telah ditetapkan dan berizin. Pemeriksaan 
 ## Tools
 - cURL
 - FFuF
-- [Web Server Simulasi Phising](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/it-update)
-- [web server simulasi Kerentanan](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/login)
+- [Web Server Simulasi](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/it-update)
 
 ## Tujuan Evaluasi
 1.	Mengukur tingkat pemahaman anggota divisi terhadap konsep social engineering, termasuk phishing, impersonation, baiting, pretexting, dan bentuk manipulasi lainnya.
@@ -31,7 +30,9 @@ Pengecekan dilakukan melalui terminal Kali Linux dengan perintah curl untuk ment
 
 1. Logo yang digunakan mengarah ke sumber mencurigakan: src = "https://cdn.totally-not-phishing-assets.ru/logo-tas.png". bukan  src=https://tas-corp.id/assets/images/logo-official.png
 2. Pelaku menggunakan prinsip pretexting, yakni Scarcity & Urgency Attack. Di mana pelaku menyamar sebagai sumber domain resmi untuk meyakinkan bahwa akun target akan segera dihapus disertai penghitung waktu mundur (countdown)  untuk membuat target merasa panik, takut dan ingin segera mengganti password mereka.
-3. c.	Pada teks bagian bawah (footer) halaman, terdapat kesalahan penulisan nama entitas korporat (typosquatting), yakni teknologi menjadi teknolgi.
+3. Pada teks bagian bawah (footer) halaman, terdapat kesalahan penulisan nama entitas korporat (typosquatting), yakni teknologi menjadi teknolgi.
+
+Setelah dilakukan uji coba pengiriman data formulir dengan data sembarang ke web simulasi, terjadi pengalihan halaman ke portal edukasi (/awareness-education). Dalam portal edukasi terdapat beberapa metrik yang terdiri dari total interaksi/kunjungan, banyak karyawan yang terjebak/kredensial terinput beserta tingkat kompromi, banyak karyawan yang melaporkan (vigilant) dan tingkat pelaporan, serta banyak karyawan yang membaca edukasi. Data-data yang ada dapat digunakan untuk mengetahui seberapa banyak karyawan yang memiliki edukasi mengenai phishing serta seberapa banyak karyawan yang memiliki tingkat kesadaran mengenai phishing. 
 
 ## Rekomendasi Mitigasi
 
