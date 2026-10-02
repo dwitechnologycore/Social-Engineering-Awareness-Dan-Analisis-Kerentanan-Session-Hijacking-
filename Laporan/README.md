@@ -8,6 +8,7 @@ Analisis dilakukan di lingkungan yang telah ditetapkan dan berizin. Pemeriksaan 
 - [Tujuan evaluasi](#tujuan-evaluasi)
 - [Hasil Temuan](#hasil-temuan)
 - [Rekomendasi Mitigasi](#rekomendasi-mitigasi)
+- [Kesimpulan](#kesimpulan)
 
 ### Tools
 - [cURL](https://www.kali.org/tools/curl/)
@@ -46,3 +47,5 @@ Selanjutnya dilakukan pengujian Manajemen Sesi Dan Kerentanan Session Hijacking 
 - Buat Prosedur standar operasional (SOP) bagi pegawai ketika menerima komunikasi mencurigakan yang mengatasnamakan bagian TI internal.
 - Buat Kebijakan pelaksanaan simulasi phishing berkala dan evaluasi kesadaran keamanan tanpa sistem hukuman (no-blame culture).
   
+### Kesimpulan 
+Praktik ini menunjukkan bahwa pembajakan sesi dapat terjadi karena kombinasi kesalahan manajemen sesi, seperti tidak adanya regenerasi session ID dan penggunaan cookie tanpa fitur keamanan, serta faktor manusia dari segi manipulasi psikologis, phishing maupun rekayasa sosial. Pelaku dapat memanfaatkan dan menggunakan kembali session ID untuk mengambil alih akun pengguna. Rekomendasi yang diperlukan untuk pencegahan yang efektif dari segi teknis aplikasi meliputi penggunaan atribut HttpOnly, Secure, dan SameSite, regenerasi ID sesi, serta penggunaan batas waktu (timeout). Sedangkan dari segi tata kelola dan SDM, rekomendasi yang efektif ialah membuat prosedur standar operasional (SOP) bagi pegawai ketika menerima komunikasi mencurigakan yang mengatasnamakan bagian TI internal serta membuat Kebijakan pelaksanaan simulasi phishing berkala dan melakukan evaluasi kesadaran keamanan tanpa sistem hukuman (no-blame culture).
