@@ -6,8 +6,8 @@ Analisis dilakukan di lingkungan yang telah ditetapkan dan berizin. Pemeriksaan 
 ## Summary
 - [Tools](#tools)
 - [Tujuan evaluasi](#TujuanEvaluasi)
-- [Hasil](#TujuanEvaluasi)
--
+- [Hasil Temuan](#HasilTemuan)
+- [Rekomendasi Mitigasi](#RekomendasiMitigasi)
 
 ## Tools
 - cURL
@@ -24,5 +24,9 @@ Analisis dilakukan di lingkungan yang telah ditetapkan dan berizin. Pemeriksaan 
 7.	Mengukur perubahan perilaku keamanan anggota, misalnya kemampuan untuk tidak membuka tautan mencurigakan, tidak memberikan kredensial, serta melaporkan indikasi serangan dengan cepat. Kecepatan dan kualitas pelaporan merupakan indikator penting dalam menilai keberhasilan program awareness.
 8.	Menentukan tingkat risiko keamanan berdasarkan hasil simulasi, observasi, pengujian kerentanan, dan analisis terhadap sistem.
 9.	Menyusun rekomendasi mitigasi baik dari segi aspek teknis aplikasi maupun tata kelola dan SDM.
+
+## Hasil Temuan
+
+## Rekomendasi Mitigasi
 
   
