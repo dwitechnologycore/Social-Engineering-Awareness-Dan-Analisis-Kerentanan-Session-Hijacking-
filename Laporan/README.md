@@ -12,7 +12,9 @@ Analisis dilakukan di lingkungan yang telah ditetapkan dan berizin. Pemeriksaan 
 ### Tools
 - cURL
 - FFuF
-- [Web Server Simulasi](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/it-update)
+- [Web Server Phising](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/it-update)
+- [Web Server Kerentanan](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/security/session-audit)
+- [Web Server Pemantauan sesi](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/it-update)
 
 ### Tujuan Evaluasi
 1.	Mengukur tingkat pemahaman anggota divisi terhadap konsep social engineering, termasuk phishing, impersonation, baiting, pretexting, dan bentuk manipulasi lainnya.
