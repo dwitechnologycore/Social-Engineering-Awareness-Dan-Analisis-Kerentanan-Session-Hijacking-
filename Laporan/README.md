@@ -3,18 +3,18 @@
 Analisis dilakukan di lingkungan yang telah ditetapkan dan berizin. Pemeriksaan meliputi keamanan koneksi, pengelolaan session ID, konfigurasi cookie, masa aktif sesi, proses logout, dan validasi sesi. Tujuannya adalah mengungkap celah yang bisa dimanfaatkan oleh pihak tak berwenang untuk mengambil alih sesi pengguna.
 
 
-## Ringkasan
+### Ringkasan
 - [Tools](#tools)
 - [Tujuan evaluasi](#tujuan-evaluasi)
 - [Hasil Temuan](#hasil-temuan)
 - [Rekomendasi Mitigasi](#rekomendasi-mitigasi)
 
-## Tools
+### Tools
 - cURL
 - FFuF
 - [Web Server Simulasi](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/it-update)
 
-## Tujuan Evaluasi
+### Tujuan Evaluasi
 1.	Mengukur tingkat pemahaman anggota divisi terhadap konsep social engineering, termasuk phishing, impersonation, baiting, pretexting, dan bentuk manipulasi lainnya.
 2.	Menilai kemampuan dalam mengenali indikator serangan, seperti tautan mencurigakan, permintaan kredensial, pesan yang mendesak, identitas pengirim palsu, serta aktivitas login yang tidak wajar.
 3.	Mengevaluasi kepatuhan terhadap prosedur keamanan, terutama dalam penggunaan kata sandi, autentikasi multifaktor, pengelolaan session, pelaporan insiden, dan perlindungan informasi sensitif.
@@ -25,7 +25,7 @@ Analisis dilakukan di lingkungan yang telah ditetapkan dan berizin. Pemeriksaan 
 8.	Menentukan tingkat risiko keamanan berdasarkan hasil simulasi, observasi, pengujian kerentanan, dan analisis terhadap sistem.
 9.	Menyusun rekomendasi mitigasi baik dari segi aspek teknis aplikasi maupun tata kelola dan SDM.
 
-## Hasil Temuan
+### Hasil Temuan
 Pengecekan dilakukan melalui terminal Kali Linux dengan perintah curl untuk mentransfer data dari server menggunakan sintaks URL. Kemudian dengan menggunakan Fuzz Faster U Foll (FFUF) untuk memeriksa direktori atau file tersembunyi di website tersebut. Ditemukan 3 kejanggalan dari website yakni 
 
 1. Logo yang digunakan mengarah ke sumber mencurigakan: src = "https://cdn.totally-not-phishing-assets.ru/logo-tas.png". bukan  src=https://tas-corp.id/assets/images/logo-official.png
@@ -34,6 +34,8 @@ Pengecekan dilakukan melalui terminal Kali Linux dengan perintah curl untuk ment
 
 Setelah dilakukan uji coba pengiriman data formulir dengan data sembarang ke web simulasi, terjadi pengalihan halaman ke portal edukasi (/awareness-education). Dalam portal edukasi terdapat beberapa metrik yang terdiri dari total interaksi/kunjungan, banyak karyawan yang terjebak/kredensial terinput beserta tingkat kompromi, banyak karyawan yang melaporkan (vigilant) dan tingkat pelaporan, serta banyak karyawan yang membaca edukasi. Data-data yang ada dapat digunakan untuk mengetahui seberapa banyak karyawan yang memiliki edukasi mengenai phishing serta seberapa banyak karyawan yang memiliki tingkat kesadaran mengenai phishing. 
 
-## Rekomendasi Mitigasi
+Selanjutnya dilakukan pengujian Manajemen Sesi Dan Kerentanan Session Hijacking dengan menyuntikkan cookie pada web simulasi untuk mencoba masuk tanpa melakukan login. Hasil uji coba menunjukkan bahwa web sedang tidak berada dalam status HttpOnly, hal ini menyebabkan penyerang dapat mengakses data pengguna dengan mudah. 
+
+### Rekomendasi Mitigasi
 
   
