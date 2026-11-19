@@ -12,10 +12,7 @@ Analisis dilakukan di lingkungan yang telah ditetapkan dan berizin. Pemeriksaan 
 ### Tools
 - [cURL](https://www.kali.org/tools/curl/)
 - [FFuF](https://www.kali.org/tools/ffuf/)
-- [web server simulasi](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/login)
-- [Web Server Phising](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/it-update)
-- [Web Server Kerentanan](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/security/session-audit)
-- [Web Server Pemantauan sesi](https://website-cybersecurity-testing-lab--bagussudung1602.replit.app/security/session-audit )
+
 <br></br>
 ### Tujuan Evaluasi
 1.	Mengukur tingkat pemahaman anggota divisi terhadap konsep social engineering, termasuk phishing, impersonation, baiting, pretexting, dan bentuk manipulasi lainnya.
